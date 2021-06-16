@@ -1,0 +1,10 @@
+<div style="height: 100%; width: 100%;border: 1px solid gray;">
+
+    <ngx-event-calendar
+    [showAddButton]="true" 
+    [language]="'en'"
+    [dataSource]="dataArray"
+    (dayEvents)="selectDay($event)"
+    (newEvent)="addEvent($event)">
+    </ngx-event-calendar>
+</div>
